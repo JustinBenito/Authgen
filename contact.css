@@ -1,0 +1,485 @@
+@keyframes shadow-drop-bottom {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  to {
+    box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+.logo-icon {
+  position: relative;
+  width: 150px;
+  height: 31px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.logo-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rectangle-div,
+.rectangle-div1,
+.rectangle-div2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #424242;
+  width: 12px;
+  height: 2px;
+}
+.rectangle-div1,
+.rectangle-div2 {
+  top: 3px;
+}
+.rectangle-div2 {
+  top: 6px;
+}
+.contact-button,
+.generator-button,
+.home-button,
+.icon-button,
+.manager-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 12px;
+  height: 8px;
+  flex-shrink: 0;
+  display: none;
+}
+.contact-button,
+.generator-button,
+.home-button,
+.manager-button {
+  font-size: 10.47px;
+  font-family: Roboto;
+  color: #005b97;
+  text-align: left;
+  display: inline-block;
+  width: 35.13px;
+  height: 11.96px;
+}
+.contact-button,
+.generator-button,
+.manager-button {
+  color: #424242;
+  width: 47px;
+  height: 12px;
+}
+.contact-button,
+.manager-button {
+  width: 42px;
+}
+.contact-button {
+  width: 38px;
+}
+.nav-items-div {
+  gap: 22.43px;
+}
+.nav-items-div,
+.navigation-right-div,
+.top-container-header,
+.top-header-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.top-container-header,
+.top-header-div {
+  width: 1070px;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.top-header-div {
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(214, 214, 214, 0.25);
+  width: 100%;
+  height: 47px;
+  padding: 16.445871353149414px 59.803165435791016px 16.445871353149414px 60px;
+  box-sizing: border-box;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+.vector-icon,
+.vector-icon1,
+.vector-icon2 {
+  position: absolute;
+  height: 74.34%;
+  width: 16.19%;
+  top: 4.57%;
+  right: 83.77%;
+  bottom: 21.09%;
+  left: 0.05%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.vector-icon1,
+.vector-icon2 {
+  height: 55.85%;
+  width: 10.78%;
+  top: 23.47%;
+  right: 70.54%;
+  bottom: 20.67%;
+  left: 18.68%;
+}
+.vector-icon2 {
+  height: 67.96%;
+  width: 8.03%;
+  top: 11.37%;
+  right: 59.57%;
+  left: 32.39%;
+}
+.vector-icon3,
+.vector-icon4,
+.vector-icon5,
+.vector-icon6 {
+  position: absolute;
+  height: 78.79%;
+  width: 10.88%;
+  top: 0.11%;
+  right: 45.46%;
+  bottom: 21.1%;
+  left: 43.66%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.vector-icon4,
+.vector-icon5,
+.vector-icon6 {
+  height: 76.88%;
+  width: 12.27%;
+  top: 23.05%;
+  right: 29.72%;
+  bottom: 0.07%;
+  left: 58.01%;
+}
+.vector-icon5,
+.vector-icon6 {
+  height: 56.28%;
+  width: 11.62%;
+  right: 14.49%;
+  bottom: 20.67%;
+  left: 73.89%;
+}
+.vector-icon6 {
+  height: 55.86%;
+  width: 10.88%;
+  top: 23.04%;
+  right: 0;
+  bottom: 21.1%;
+  left: 89.12%;
+}
+.logo-div1 {
+  position: relative;
+  width: 387px;
+  height: 85px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.info-div {
+  height: 131px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.mial-1-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 128px;
+  height: 118.79px;
+  object-fit: cover;
+}
+.justinbenito1974gmailcom-div {
+  position: absolute;
+  top: 40.39px;
+  left: 141px;
+  font-weight: 500;
+  display: inline-block;
+}
+.group-div {
+  position: relative;
+  width: 572px;
+  height: 118.79px;
+  flex-shrink: 0;
+}
+.mail-div {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.safari-1-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 131px;
+  height: 131px;
+  object-fit: cover;
+}
+.justinbenitonetlifyapp-div {
+  position: absolute;
+  top: 46.5px;
+  left: 141px;
+  font-weight: 500;
+  display: inline-block;
+}
+.group-div1 {
+  position: relative;
+  width: 478px;
+  height: 131px;
+  flex-shrink: 0;
+}
+.safari-div {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icons8-linkedin-144-1 {
+  position: absolute;
+  top: 0;
+  left: -4px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.linkedincominjustinbenito-a {
+  text-decoration: none;
+  position: absolute;
+  top: 37px;
+  left: 144px;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+}
+.group-div2 {
+  position: relative;
+  width: 557px;
+  height: 112px;
+  flex-shrink: 0;
+}
+.frame-div,
+.linkedin-div {
+  align-self: stretch;
+  display: flex;
+}
+.linkedin-div {
+  flex-direction: row;
+  padding: 0 51px 0 12px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-div {
+  height: 371.79px;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.contact-div,
+.contact-div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-div1 {
+  border-radius: 10px;
+  width: 986px;
+  padding: 22px 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  background-image: url(./public/contact@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  opacity: 1;
+}
+.contact-div1.animate {
+  animation: 1s ease 0s 1 normal forwards shadow-drop-bottom;
+}
+.contact-div {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1112px;
+  justify-content: flex-start;
+  gap: 61px;
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  font-family: Roboto;
+}
+@media screen and (max-width: 1200px) {
+  .top-container-header {
+    width: 80%;
+    flex-direction: column;
+  }
+  .top-header-div {
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 768px) {
+  .icon-button {
+    display: flex;
+  }
+  .nav-items-div {
+    display: none;
+  }
+  .top-container-header {
+    display: flex;
+    width: 20%;
+  }
+  .top-header-div {
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+  }
+  .group-div,
+  .mail-div {
+    width: 80%;
+  }
+  .frame-div {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .navigation-right-div {
+    display: flex;
+  }
+  .mial-1-icon {
+    width: 114px;
+    height: 118px;
+  }
+  .group-div {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 410px) {
+  .logo-div1 {
+    width: 90%;
+  }
+  .justinbenito1974gmailcom-div,
+  .justinbenitonetlifyapp-div,
+  .linkedincominjustinbenito-a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .contact-div1 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .justinbenito1974gmailcom-div,
+  .justinbenitonetlifyapp-div,
+  .linkedincominjustinbenito-a {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .justinbenito1974gmailcom-div,
+  .justinbenitonetlifyapp-div,
+  .linkedincominjustinbenito-a {
+    font-size: 16px;
+  }
+}
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.contact-button3,
+.generator-button3,
+.home-button3,
+.manager-button3 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-size: 10.47px;
+  font-family: Roboto;
+  color: #005b97;
+  text-align: left;
+  display: inline-block;
+  width: 29px;
+  height: 12px;
+  flex-shrink: 0;
+}
+.contact-button3,
+.generator-button3,
+.manager-button3 {
+  color: #424242;
+  width: 47px;
+}
+.contact-button3,
+.manager-button3 {
+  width: 42px;
+}
+.contact-button3 {
+  width: 37px;
+}
+.drawer-div,
+.drawer-items-div {
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.drawer-items-div {
+  flex: 1;
+  height: 192px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.drawer-div {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  opacity: 0;
+  max-height: 90%;
+  overflow: auto;
+}
+.drawer-div.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-top;
+}
+@media screen and (max-width: 768px) {
+  .drawer-div {
+    width: 100%;
+  }
+}

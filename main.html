@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title></title>
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="./main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="top-header-div3">
+        <header class="top-container-header3" id="nav">
+          <div class="logo-div5" id="logo">
+            <a href="./index.html">
+              <img class="logo-icon3" alt="" src="public/logo3.svg" />
+            </a>
+
+          </div>
+          <button class="icon-button3" autofocus id="iconButton">
+            <div class="rectangle-div9"></div>
+            <div class="rectangle-div10"></div>
+            <div class="rectangle-div11"></div>
+          </button>
+          <div class="navigation-right-div3">
+            <div class="nav-items-div3">
+              <button class="home-button4" autofocus id="homeButton">
+                Home</button
+              ><button class="generator-button4" autofocus>Generator</button
+              ><button class="manager-button4" autofocus id="managerButton">
+                Manager</button
+              ><button class="contact-button4" autofocus id="contactButton">
+                Contact
+              </button>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="main-div1" id="main">
+        <div class="frame-div2" id="insinde" data-animate-on-scroll>
+          <div class="generator-div" >Generator</div>
+          
+            
+            <input id="pwd-gen" class="rectangle-input2" type="text" autofocus readonly value="Start Generating"/>
+            
+
+          <button class="frame-button" autofocus onclick="generate()">
+            <div class="generate-div">Generate</div>
+          </button>
+          <button class="frame-button1" autofocus onclick="copyPassword()">
+            <div class="generate-div">Copy</div>
+          </button>
+        </div>
+      </div>
+      <section class="info-section">
+        <div class="frame-div3" data-animate-on-scroll>
+          <img
+            class="image-padlock-icon"
+            alt=""
+            src="public/imagepadlock@1x.png"
+          />
+          <div class="info-div3">
+            <h1 class="frame-h1">
+              <h1 class="text-h11">Save your Passwords in one Place...</h1>
+            </h1>
+            <div class="button-manage-div">
+              <button
+                class="manage-passwords-button"
+                autofocus
+                id="managePasswordsButton"
+              >
+                Manage Passwords
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="drawer" class="popup-overlay" style="display: none">
+      <div class="drawer-div" data-animate-on-scroll>
+        <div class="drawer-items-div" id="drawer">
+          <button class="home-button3" autofocus id="drawerhomeButton">
+            Home</button
+          ><button
+            class="generator-button3"
+            autofocus
+            id="drawergeneratorButton"
+          >
+            Generator</button
+          ><button class="manager-button3" autofocus id="drawermanagerButton">
+            Manager</button
+          ><button class="contact-button3" autofocus id="drawercontactButton">
+            Contact
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="scripts.js" ></script>
+  
+  </body>
+</html>

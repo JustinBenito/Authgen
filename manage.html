@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title></title>
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="./manage.css" />
+    <link rel="stylesheet" href="./component.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="manage-div">
+      <div class="top-header-div2">
+        <header class="top-container-header2" id="nav">
+          <div class="logo-div4" id="logo">
+            <a href="./index.html">
+            <img class="logo-icon2" alt="logo" src="public/logo2.svg" />
+          </a>
+          </div>
+          <button class="icon-button2" autofocus id="iconButton">
+            <div class="rectangle-div6"></div>
+            <div class="rectangle-div7"></div>
+            <div class="rectangle-div8"></div>
+          </button>
+          <div class="navigation-right-div2">
+            <div class="nav-items-div2">
+              <button class="home-button2" autofocus id="homeButton">
+                Home</button
+              ><button class="generator-button2" autofocus id="generatorButton">
+                Generator</button
+              ><button class="manager-button2" autofocus>Manager</button
+              ><button class="contact-button2" autofocus id="contactButton">
+                Contact
+              </button>
+            </div>
+          </div>
+        </header>
+      </div>
+
+<!-- This is the component-->
+<div class="manage-top-div">
+<!-- App Wrapper -->
+<main class="app" style="width: 100%;">
+  <!-- Greeting -->
+  <section class="greeting">
+    <h2 class="title">
+       <span class = "span"><input type="text" id="name" value="." /></span>
+    </h2>
+  </section>
+  <!-- End of Greeting -->
+  
+  <!-- New Todo -->
+  <section class="create-todo">
+    <h3>Store Passwords</h3>
+    <form id="new-todo-form">
+      <h4>Manage it</h4>
+      <input 
+        type="text" 
+        placeholder="Website"
+        name="content"
+        id="content" />
+        <input 
+        type="text" 
+        placeholder="Password"
+        name="content1"
+        id="content1" />
+      
+
+
+
+      <input  class = "glowup" type="submit" value="Add it"/>
+    </form>
+  </section>
+  <!-- End of New Todo -->
+
+  <!-- Todo List -->
+  <section class="todo-list">
+    <h3>Passwords</h3>
+    <div class="list" id="todo-list"></div>
+  </section>
+  <!-- End of Todo List -->
+
+</main>
+<!-- End of App Wrapper -->
+</div>
+<!-- This is the component-->
+
+<!--       
+
+        <div class="info-div2" data-animate-on-scroll>
+          <div class="frame-div1">
+            <div class="ask1-div">
+              <input
+              id="web"
+                class="rectangle-input"
+                type="text"
+                placeholder="website"
+                required
+                autofocus
+              />
+            </div>
+            <div class="ask1-div">
+              <input
+              id="pwd"
+                class="rectangle-input"
+                type="text"
+                placeholder="Password"
+                required
+                autofocus
+              />
+            </div>
+            <button class="store-button" onclick="add()">
+              <div class="store-div" >Store!</div>
+            </button>
+          </div>
+          <h1 class="text-h1">Passwords</h1>
+
+           THe Component-->
+
+          <!-- <div class="component-div">
+            <div class="text-menu-div">
+              <a class="website-a" id="we">Website!</a><a class="password" id="pw">Password</a>
+              <button class="copy-icon-1-button" autofocus>
+                <button class="group-button" autofocus>
+                  <img class="vector-icon14" alt="" src="public/vector14.svg" />
+                </button>
+              </button>
+            </div>
+          </div> -->
+
+
+          <!-- Example-->
+          <!-- <section class="create-todo">
+            <form id="new-todo-form">
+             <input 
+                type="text" 
+                placeholder="e.g. Get some milk"
+                name="content"
+                id="content" />
+               -->
+              <!-- <div class="options">
+                <label>
+                  <input type="radio" name="category" id="category1" value="business" /> 
+                  <span class="bubble business"></span>
+                  <div>Work</div>
+                </label>
+                <label>
+                  <input type="radio" name="category" id="category2" value="personal" />
+                  <span class="bubble personal"></span>
+                  <div>Personal</div>
+                </label>
+              </div> -->
+      
+              <!-- <input  class = "glowup" type="submit" value="Add todo" />
+            </form>
+          </section> --> 
+<!-- Example--
+
+
+
+          -End of the component-->
+        <!-- </div>
+      </div>
+    </div> -->
+
+    <div id="drawer" class="popup-overlay" style="display: none">
+      <div class="drawer-div" data-animate-on-scroll>
+        <div class="drawer-items-div" id="drawer">
+          <button class="home-button3" autofocus id="drawerhomeButton">
+            Home</button
+          ><button
+            class="generator-button3"
+            autofocus
+            id="drawergeneratorButton"
+          >
+            Generator</button
+          ><button class="manager-button3" autofocus id="drawermanagerButton">
+            Manager</button
+          ><button class="contact-button3" autofocus id="drawercontactButton">
+            Contact
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="scripts.js" ></script>
+    <script type="text/javascript" src="component.js" ></script>
+    <!-- <script>
+      var drawerhomeButton = document.getElementById("drawerhomeButton");
+      if (drawerhomeButton) {
+        drawerhomeButton.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var drawergeneratorButton = document.getElementById("drawergeneratorButton");
+      if (drawergeneratorButton) {
+        drawergeneratorButton.addEventListener("click", function (e) {
+          window.location.href = "./main.html";
+        });
+      }
+      
+      var drawermanagerButton = document.getElementById("drawermanagerButton");
+      if (drawermanagerButton) {
+        drawermanagerButton.addEventListener("click", function (e) {
+          window.location.href = "./manage.html";
+        });
+      }
+      
+      var drawercontactButton = document.getElementById("drawercontactButton");
+      if (drawercontactButton) {
+        drawercontactButton.addEventListener("click", function (e) {
+          window.location.href = "./contact.html";
+        });
+      }
+      
+      var iconButton = document.getElementById("iconButton");
+      if (iconButton) {
+        iconButton.addEventListener("click", function () {
+          var drawerOverlay = document.getElementById("drawer");
+          if (!drawerOverlay) return;
+          var drawerOverlayStyle = drawerOverlay.style;
+          if (drawerOverlayStyle) {
+            drawerOverlayStyle.display = "flex";
+            drawerOverlayStyle.zIndex = 99;
+            drawerOverlayStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            drawerOverlayStyle.alignItems = "center";
+            drawerOverlayStyle.justifyContent = "";
+          }
+          drawerOverlay.setAttribute("closable", "");
+      
+          var onClick =
+            drawerOverlay.onClick ||
+            function (e) {
+              if (
+                e.target === drawerOverlay &&
+                drawerOverlay.hasAttribute("closable")
+              ) {
+                drawerOverlayStyle.display = "none";
+              }
+            };
+          drawerOverlay.addEventListener("click", onClick);
+        });
+      }
+      
+      var homeButton = document.getElementById("homeButton");
+      if (homeButton) {
+        homeButton.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var generatorButton = document.getElementById("generatorButton");
+      if (generatorButton) {
+        generatorButton.addEventListener("click", function (e) {
+          window.location.href = "./main.html";
+        });
+      }
+      
+      var contactButton = document.getElementById("contactButton");
+      if (contactButton) {
+        contactButton.addEventListener("click", function (e) {
+          window.location.href = "./contact.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script> -->
+  </body>
+</html>
